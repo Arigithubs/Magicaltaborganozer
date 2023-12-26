@@ -2,16 +2,62 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: #f8f8f8;
 }
 
 .container {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 #groupNameInput {
-  margin-top: 10px;
-  padding: 5px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Add more styles as needed */
+#createGroupBtn {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#createGroupBtn:hover {
+  background-color: #45a049;
+}
+
+.group-list {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #ddd;
+}
