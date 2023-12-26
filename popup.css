@@ -1,13 +1,12 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  /* Add your magical styles here */
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Add your magical styles here */
