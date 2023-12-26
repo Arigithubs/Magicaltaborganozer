@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Implement additional functionality when clicking on a group
         console.log(`Clicked on group: ${groupName}`);
       }
+  
+      if (event.target.classList.contains('delete-group-btn')) {
+        const groupName = event.target.parentElement.textContent.trim();
+        deleteGroup(groupName);
+        loadTabGroups(renderGroupList);
+      }
     });
   });
   
@@ -29,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
     tabGroups.forEach(group => {
       const listItem = document.createElement('li');
       listItem.textContent = group.name;
+  
+      const deleteBtn = document.createElement('button');
+      deleteBtn.classList.add('delete-group-btn');
+      deleteBtn.textContent = 'Delete';
+      listItem.appendChild(deleteBtn);
+  
       groupList.appendChild(listItem);
     });
   }
