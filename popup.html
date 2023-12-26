@@ -9,9 +9,14 @@
 <body>
   <div class="container">
     <h1>Tab Organizer</h1>
-    <button id="createGroupBtn">Create Group</button>
-    <input type="text" id="groupNameInput" placeholder="Group Name">
-    <ul id="groupList"></ul>
+    <div class="controls">
+      <input type="text" id="groupNameInput" placeholder="Enter Group Name">
+      <button id="createGroupBtn">Create Group</button>
+    </div>
+    <div class="group-list">
+      <h2>Your Groups</h2>
+      <ul id="groupList"></ul>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
